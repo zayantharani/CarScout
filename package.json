@@ -1,0 +1,18 @@
+{
+  "name": "vehicle-deal-monitor",
+  "version": "2.0.0",
+  "description": "Puppeteer-based vehicle deal monitor for Craigslist",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "scan": "node -e \"require('./scanner').runScan().then(n => { console.log('Done:', n, 'deals'); process.exit(); })\""
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "dotenv": "^16.4.0",
+    "node-cron": "^3.0.3",
+    "puppeteer": "^22.0.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}
